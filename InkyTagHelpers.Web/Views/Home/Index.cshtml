@@ -1,0 +1,179 @@
+﻿@{
+    ViewData["Title"] = "Index Page";
+}
+
+@* Button :: https://foundation.zurb.com/emails/docs/button.html *@
+
+<button href="#">Button</button>
+<button href="#" class="tiny">Tiny Button</button>
+<button href="#" class="small">Small Button</button>
+<button href="#">Default Button</button>
+<button href="#" class="large">Large Button</button>
+<row>
+    <column>
+        <button href="#" class="expanded">Expanded Button</button>
+        <button href="#" class="small-expanded">Expand small only</button>
+    </column>
+</row>
+<button href="#" class="secondary">Secondary Button</button>
+<button href="#" class="success">Success Button</button>
+<button href="#" class="warning">Warning Button</button>
+<button href="#" class="alert">Alert Button</button>
+<button href="#" class="radius">Radius</button>
+<button href="#" class="rounded">Round</button>
+
+@* Callout :: https://foundation.zurb.com/emails/docs/callout.html *@
+
+<row>
+    <columns small="6">
+        <p>Not in a callout :(</p>
+    </columns>
+    <columns small="6">
+        <callout class="secondary">
+            <p>I'm in a callout!</p>
+        </callout>
+    </columns>
+</row>
+
+<callout class="primary">
+    <row>
+        <columns small="12">
+            <p>This whole row is in a callout!</p>
+        </columns>
+    </row>
+</callout>
+
+<callout>
+    <p>Successfully avoided Kraken. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+</callout>
+<callout class="primary">
+    <p>Successfully avoided Kraken. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+</callout>
+
+<callout class="success">
+    <p>Successfully avoided Kraken. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+</callout>
+
+<callout class="warning">
+    <p>There may be Krakens around. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+</callout>
+
+<callout class="alert">
+    <p>Incoming Kraken! Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+</callout>
+
+@* Grid :: https://foundation.zurb.com/emails/docs/grid.html *@
+
+<container>All the rows go here</container>
+
+@* Rows :: https://foundation.zurb.com/emails/docs/grid.html#rows *@
+
+<container>
+    <row>
+        Columns go here
+    </row>
+</container>
+
+@* Columns :: https://foundation.zurb.com/emails/docs/grid.html#columns *@
+<row>
+
+    <columns>This is a column. Columns contain your content.</columns>
+</row>
+
+@* Collapsing :: https://foundation.zurb.com/emails/docs/grid.html#collapsing *@
+
+<row class="collapse">
+    <columns large="6"><img src="https://placehold.it/300x150/777777/&text=These columns touch" alt=""></columns>
+    <columns large="6"><img src="https://placehold.it/300x150/999999/&text=These columns touch" alt=""></columns>
+</row>
+
+@* Offset :: https://foundation.zurb.com/emails/docs/grid.html#offsets *@
+
+<row>
+    <columns large="3" class="large-offset-3"><img src="https://placehold.it/150x150/999999/&text=offset column" alt=""></columns>
+    <columns large="3"><img src="https://placehold.it/150x150/999999" alt=""></columns>
+</row>
+
+@* Menu :: https://foundation.zurb.com/emails/docs/menu.html *@
+
+<menu>
+    <item href="http://zurb.com">Item</item>
+    <item href="http://zurb.com">Item</item>
+    <item href="http://zurb.com">Item</item>
+</menu>
+
+@* Vertical Menu :: https://foundation.zurb.com/emails/docs/menu.html#vertical-menu *@
+
+<menu class="vertical">
+    <item href="http://zurb.com">Item</item>
+    <item href="http://zurb.com">Item</item>
+    <item href="http://zurb.com">Item</item>
+</menu>
+
+@* Vertical Menu on the Small Breakpoint :: https://foundation.zurb.com/emails/docs/menu.html#vertical-menu-on-the-small-breakpoint *@
+
+<menu class="small-vertical">
+    <item href="http://zurb.com">Item</item>
+    <item href="http://zurb.com">Item</item>
+    <item href="http://zurb.com">Item</item>
+</menu>
+
+@* Spacer :: https://foundation.zurb.com/emails/docs/spacer.html *@
+
+<p>Stuff on top</p>
+<spacer size="100"></spacer>
+<p>Stuff on bottom</p>
+
+@* Wrapper :: https://foundation.zurb.com/emails/docs/wrapper.html *@
+
+<wrapper>
+    content
+</wrapper>
+
+@* Full (fluid) width header or footer :: https://foundation.zurb.com/emails/docs/wrapper.html#full-fluid-width-header-or-footer *@
+
+<style type="text/css">
+    .header
+    {
+        background: #8a8a8a;
+    }
+
+        .header .columns
+        {
+            padding-bottom: 0;
+        }
+
+        .header p
+        {
+            color: #fff;
+            margin-bottom: 0;
+        }
+
+        .header .wrapper-inner
+        {
+            padding: 20px; /*controls the height of the header*/
+        }
+
+        .header .container
+        {
+            background: #8a8a8a;
+        }
+
+    .wrapper.secondary
+    {
+        background: #f3f3f3;
+    }
+</style>
+
+<wrapper class="header" bgcolor="#8a8a8a">
+    <container>
+        <row class="collapse">
+            <columns small="6" valign="middle">
+                <img src="https://placehold.it/200x50/663399">
+            </columns>
+            <columns small="6" valign="middle">
+                <p class="text-right">BASIC</p>
+            </columns>
+        </row>
+    </container>
+</wrapper>

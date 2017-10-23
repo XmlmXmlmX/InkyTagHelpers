@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewData["Title"] - InkyTagHelpers.Web</title>
+    <environment include="Development">
+        <link rel="stylesheet" href="~/lib/foundation-emails/dist/foundation-emails.css" />
+    </environment>
+    <environment exclude="Development">
+        <link rel="stylesheet" href="https://unpkg.com/foundation-emails@2.2.1/dist/foundation-emails.min.css"
+              asp-fallback-href="~/lib/foundation-emails/dist/foundation-emails.min.css" />
+        <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
+    </environment>
+</head>
+<body>
+    <table class="body">
+        <tr>
+            <td class="center" align="center" valign="top">
+                <center>
+                    <spacer size="16"></spacer>
+                        @RenderBody()
+                    <spacer size="16"></spacer>
+                </center>
+            </td>
+        </tr>
+    </table>
+    @{ Html.RenderPartial("~/Views/Shared/FooterFix.cshtml"); }
+</body>
+</html>

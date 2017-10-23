@@ -1,0 +1,13 @@
+{
+    "name": "inky-tag-helpers-web",
+    "version": "1.0.0",
+    "private": true,
+    "scripts": {
+        "copyFoundationEmailsStylesheets": "copyfiles -f ./node_modules/foundation-emails/dist/*.css ./wwwroot/lib/foundation-emails/dist",
+        "postinstall": "npm run copyFoundationEmailsStylesheets"
+    },
+    "devDependencies": {
+        "foundation-emails": "^2.2.1",
+        "copyfiles": "^1.2.0"
+    }
+}
