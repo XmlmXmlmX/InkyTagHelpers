@@ -1,4 +1,5 @@
-![VSTS Build Status](https://sebastianhoesl.visualstudio.com/_apis/public/build/definitions/2f6383b8-1235-49c1-b1f1-627209caf167/17/badge "VSTS Build Status")
+![VSTS Build Status](https://sebastianhoesl.visualstudio.com/_apis/public/build/definitions/2f6383b8-1235-49c1-b1f1-627209caf167/17/badge "VSTS Build Status") ![Version](https://img.shields.io/nuget/v/InkyTagHelpers.svg "Version") Pre: ![Version](https://img.shields.io/nuget/vpre/InkyTagHelpers.svg "Version") ![Downloads](https://img.shields.io/nuget/dt/InkyTagHelpers.svg "Downloads")
+
 
 # Inky Tag Helpers
 
