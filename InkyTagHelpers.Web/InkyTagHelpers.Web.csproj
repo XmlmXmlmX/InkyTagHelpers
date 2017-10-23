@@ -5,22 +5,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="InkyTagHelpers" Version="2.0.0.8" />
+    <PackageReference Include="InkyTagHelpers" Version="1.0.0.0" />
     <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.0" />
   </ItemGroup>
 
   <ItemGroup>
     <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.0" />
   </ItemGroup>
-
-  <ItemGroup>
-    <None Include="Views\Home\Password.cshtml" />
-    <None Include="Views\Home\Welcome.cshtml" />
-  </ItemGroup>
-
-  <!--<Target Name="PrepareNugetPackage" BeforeTargets="Build">
-    <Message Text="Bar" Importance="High" />
-    <Exec Command="dotnetcore build &quot;$(SolutionDir)InkyTagHelpers\InkyTagHelpers.csproj&quot; -i &quot;$(SolutionDir)Source\Tts.CustomerPortal.Forms.Templates&quot; -o &quot;$(SolutionDir)Source\Tts.CustomerPortal.Web\Festool\Scripts\_formTemplates.js&quot;" WorkingDirectory="$(WebProjectPath)" />
-  </Target>-->
-
 </Project>
