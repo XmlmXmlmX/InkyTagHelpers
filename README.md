@@ -1,3 +1,5 @@
+![VSTS Build Status](https://sebastianhoesl.visualstudio.com/_apis/public/build/definitions/2f6383b8-1235-49c1-b1f1-627209caf167/17/badge "VSTS Build Status")
+
 # Inky Tag Helpers
 
 ## Tag Helpers to render Inky-HTML (Foundation for Emails) in ASP.NET Core.
