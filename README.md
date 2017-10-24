@@ -19,7 +19,10 @@ or just `Manage NuGet Packages...` from your projects context menu.
 
 ## Usage
 
-Follow the official Foundation for Emails documentation in components: https://foundation.zurb.com/emails/docs/
+Follow the official Foundation for Emails documentation in components: https://foundation.zurb.com/emails/docs/.
+
+### The supported tags are
+`<button>`, `<callout>`, `<columns>`, `<container>`, `<menu>`, `<item>` (only nested inside menu), `<row>`, `<spacer>`, `<wrapper>`.
 
 ## Examples
 
