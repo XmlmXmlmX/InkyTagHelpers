@@ -28,4 +28,4 @@ In ASP.NET Core, just start with the [Example](#examples) project or from [scrat
 
 ## Examples
 
-Have a look at the [InkyTagHelpers.Web](https://github.com/XmlmXmlmX/InkyTagHelpers/blob/master/InkyTagHelpers.Web/) project. There xou can find some basic usage examples.
+Have a look at the [InkyTagHelpers.Web](https://github.com/XmlmXmlmX/InkyTagHelpers/blob/master/InkyTagHelpers.Web/) project. There you can find some basic usage examples.
