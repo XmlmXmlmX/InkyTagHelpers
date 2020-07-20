@@ -1,4 +1,5 @@
-[![VSTS Build Status](https://sebastianhoesl.visualstudio.com/_apis/public/build/definitions/2f6383b8-1235-49c1-b1f1-627209caf167/17/badge "VSTS Build Status")](https://sebastianhoesl.visualstudio.com/InkyTagHelpers/_build) [![Version](https://img.shields.io/nuget/v/InkyTagHelpers.svg "Version")](https://www.nuget.org/packages/InkyTagHelpers/) [![Downloads](https://img.shields.io/nuget/dt/InkyTagHelpers.svg "Downloads")](https://www.nuget.org/packages/InkyTagHelpers/)
+![.NET Core](https://github.com/XmlmXmlmX/InkyTagHelpers/workflows/.NET%20Core/badge.svg)
+[![Version](https://img.shields.io/nuget/v/InkyTagHelpers.svg "Version")](https://www.nuget.org/packages/InkyTagHelpers/) [![Downloads](https://img.shields.io/nuget/dt/InkyTagHelpers.svg "Downloads")](https://www.nuget.org/packages/InkyTagHelpers/)
 
 
 # Inky Tag Helpers
