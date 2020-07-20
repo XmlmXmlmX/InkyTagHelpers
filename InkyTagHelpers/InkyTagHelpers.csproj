@@ -10,6 +10,7 @@
     <RepositoryUrl>https://github.com/XmlmXmlmX/InkyTagHelpers</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageLicenseUrl>https://github.com/XmlmXmlmX/InkyTagHelpers/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageProjectUrl>https://github.com/XmlmXmlmX/InkyTagHelpers</PackageProjectUrl>
     <PackageTags>taghelpers,aspnetcore,inky,foundation</PackageTags>
     <PackageReleaseNotes></PackageReleaseNotes>
