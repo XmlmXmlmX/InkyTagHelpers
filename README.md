@@ -1,4 +1,4 @@
-![.NET Core](https://github.com/XmlmXmlmX/InkyTagHelpers/workflows/.NET%20Core/badge.svg)
+[![.NET Core](https://github.com/XmlmXmlmX/InkyTagHelpers/workflows/.NET%20Core/badge.svg)](https://github.com/XmlmXmlmX/InkyTagHelpers/actions)
 [![Version](https://img.shields.io/nuget/v/InkyTagHelpers.svg "Version")](https://www.nuget.org/packages/InkyTagHelpers/) [![Downloads](https://img.shields.io/nuget/dt/InkyTagHelpers.svg "Downloads")](https://www.nuget.org/packages/InkyTagHelpers/)
 
 
