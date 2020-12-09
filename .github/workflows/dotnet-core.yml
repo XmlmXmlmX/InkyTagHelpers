@@ -35,7 +35,7 @@ jobs:
         # The desired behavior if no files are found using the provided path.
   publish:
     name: Publish
-    
+    needs: build
     runs-on: ubuntu-latest
     
     steps:
