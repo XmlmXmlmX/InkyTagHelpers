@@ -31,7 +31,7 @@ jobs:
         # Artifact name
         name: nuget_package
         # A file, directory or wildcard pattern that describes what to upload
-        path: ./InkyTagHelpers/InkyTagHelpers/
+        path: InkyTagHelpers/
         # The desired behavior if no files are found using the provided path.
   publish:
     name: Publish
@@ -50,7 +50,7 @@ jobs:
       uses: brandedoutcast/publish-nuget@v2.5.5
       with:
         # Filepath of the project to be packaged, relative to root of repository
-        PROJECT_FILE_PATH: ./InkyTagHelpers/InkyTagHelpers.csproj
+        PROJECT_FILE_PATH: ./InkyTagHelpers/InkyTagHelpers/InkyTagHelpers.csproj
         NUGET_KEY: ${{ secrets.NUGET_PUBLISH_API_KEY }}
         # NuGet server uri hosting the packages, defaults to https://api.nuget.org
         NUGET_SOURCE: https://api.nuget.org
