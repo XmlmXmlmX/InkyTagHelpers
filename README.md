@@ -20,7 +20,7 @@ or just `Manage NuGet Packages...` from your projects context menu.
 
 ## Usage
 
-To understand wich tag should be used for what, follow the official Foundation for Emails documentation in components: https://get.foundation/emails/docs/.
+To understand wich tag should be used for what, follow the official Foundation for Emails documentation in components: https://get.foundation/emails/docs/inky.html.
 
 In ASP.NET Core, just start with the [Example](#examples) project or from [scratch](https://github.com/XmlmXmlmX/InkyTagHelpers/wiki)
 
