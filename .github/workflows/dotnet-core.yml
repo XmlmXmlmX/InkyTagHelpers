@@ -62,19 +62,31 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
+    - name: Download a Build Artifact
+      uses: actions/download-artifact@v2.0.6
+      with:
+        # Artifact name
+        name: build_artifact
+    - name: gaction-version-getter
+      # You may pin to the exact commit or the version.
+      # uses: ChiefNoir/gaction-version-getter@c0c29cd9b59ae3e4216e4cb71285c148eb36a185
+      uses: ChiefNoir/gaction-version-getter@v2
+      with:
+        # path to the .csproj file
+        projectPath: /home/runner/work/InkyTagHelpers/InkyTagHelpers/InkyTagHelpers.csproj
     - name: Create a Release
       uses: actions/create-release@v1.1.4
       with:
         # The name of the tag. This should come from the webhook payload, `github.GITHUB_REF` when a user pushes a new tag
-        tag_name: ${{ github.GITHUB_REF }}
+        tag_name: ${{ steps.get_version.outputs.projectVersion }}
         # The name of the release. For example, `Release v1.0.1`
-        release_name: Release v${{ github.GITHUB_REF }}
+        release_name: Release v${{ steps.get_version.outputs.projectVersion }}
     - name: Upload a Release Asset
       uses: actions/upload-release-asset@v1.0.2
       with:
         # The URL for uploading assets to the release
         upload_url: https://www.nuget.org/api/v2/package/InkyTagHelpers/${{ github.GITHUB_REF }}
         # The name of the asset you want to upload
-        asset_name: inkytaghelpers.${{ github.GITHUB_REF }}.nupkg
+        asset_name: inkytaghelpers.${{ steps.get_version.outputs.projectVersion }}.nupkg
         # The content-type of the asset you want to upload. See the supported Media Types here: https://www.iana.org/assignments/media-types/media-types.xhtml for more information
         asset_content_type: application/zip
