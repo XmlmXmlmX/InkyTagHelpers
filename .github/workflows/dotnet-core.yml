@@ -60,6 +60,8 @@ jobs:
     name: Release
     needs: [publish]
     runs-on: ubuntu-latest
+    # release task is not working at the moment. `ChiefNoir/gaction-version-getter` is getting a wrong version (1.0.0.0) and `actions/create-release` says `Parameter token or opts.auth is required`?
+    if: true == false
     
     steps:
     - name: Download a Build Artifact
