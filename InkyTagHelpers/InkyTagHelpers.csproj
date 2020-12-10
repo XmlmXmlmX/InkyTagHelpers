@@ -22,7 +22,7 @@
     <GenerateAssemblyCopyrightAttribute>false</GenerateAssemblyCopyrightAttribute>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
     <FileVersion>1.0.0.0</FileVersion>
-    <PackageIconUrl>https://foundation.zurb.com/assets/img/icons/foundation-favicon.ico</PackageIconUrl>
+    <PackageIconUrl>https://raw.githubusercontent.com/XmlmXmlmX/InkyTagHelpers/ci/foundation-favicon.ico</PackageIconUrl>
     <SignAssembly>false</SignAssembly>
   </PropertyGroup>
 
