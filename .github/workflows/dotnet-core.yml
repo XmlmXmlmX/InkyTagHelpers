@@ -55,3 +55,26 @@ jobs:
         NUGET_KEY: ${{ secrets.NUGET_PUBLISH_API_KEY }}
         # NuGet server uri hosting the packages, defaults to https://api.nuget.org
         NUGET_SOURCE: https://api.nuget.org
+
+  release:
+    name: Release
+    needs: [publish]
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Create a Release
+      uses: actions/create-release@v1.1.4
+      with:
+        # The name of the tag. This should come from the webhook payload, `github.GITHUB_REF` when a user pushes a new tag
+        tag_name: ${{ github.GITHUB_REF }}
+        # The name of the release. For example, `Release v1.0.1`
+        release_name: Release v${{ github.GITHUB_REF }}
+    - name: Upload a Release Asset
+      uses: actions/upload-release-asset@v1.0.2
+      with:
+        # The URL for uploading assets to the release
+        upload_url: https://www.nuget.org/api/v2/package/InkyTagHelpers/${{ github.GITHUB_REF }}
+        # The name of the asset you want to upload
+        asset_name: inkytaghelpers.${{ github.GITHUB_REF }}.nupkg
+        # The content-type of the asset you want to upload. See the supported Media Types here: https://www.iana.org/assignments/media-types/media-types.xhtml for more information
+        asset_content_type: application/zip
