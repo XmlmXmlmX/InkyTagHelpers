@@ -37,6 +37,7 @@ jobs:
     name: Publish
     needs: build
     runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/master'
     
     steps:
     - name: Download a Build Artifact
